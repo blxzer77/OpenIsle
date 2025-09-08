@@ -1,0 +1,33 @@
+# 统一文本文件换行符为 LF（避免 Windows CRLF 引发冲突）
+* text=auto eol=lf
+
+# Java 源码始终作为文本处理
+*.java text eol=lf
+*.xml text eol=lf
+*.properties text eol=lf
+*.yml text eol=lf
+
+# 脚本文件保持 LF
+*.sh text eol=lf
+
+# Windows 脚本保持 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Markdown、文档类文件保持 LF
+*.md text eol=lf
+*.txt text eol=lf
+
+# 常见二进制文件不要改换行符
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.jar binary
+*.war binary
+*.zip binary
+*.gz binary
+*.exe binary
+*.dll binary
