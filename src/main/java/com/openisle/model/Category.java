@@ -13,17 +13,17 @@ import lombok.Setter;
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // 主键，自增 ID
 
     @Column(nullable = false, unique = true)
-    private String name;
+    private String name; // 分类名称，唯一
 
     @Column(nullable = false)
-    private String icon;
+    private String icon; // 图标，必填
 
     @Column
-    private String smallIcon;
+    private String smallIcon; // 小图标（可选）
 
     @Column(name = "description", nullable = false)
-    private String description;
+    private String description; // 分类描述
 }
