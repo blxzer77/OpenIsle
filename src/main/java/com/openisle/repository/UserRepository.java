@@ -10,7 +10,13 @@ import java.util.Optional;
 
 
 /**
- * 用户仓库接口。
+ * UserRepository
+ *
+ * 用户仓库接口，提供用户维度的查询与统计能力。
+ *
+ * 能力概览：
+ * - 基础查找：按用户名、邮箱查询；用户名模糊搜索；按角色筛选。
+ * - 统计指标：经验值阈值统计、注册时间阈值统计；注册量日聚合。
  */
 public interface UserRepository extends JpaRepository<User, Long> {
     // 根据用户名/邮箱查询

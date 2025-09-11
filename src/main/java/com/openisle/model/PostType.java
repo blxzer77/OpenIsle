@@ -1,7 +1,9 @@
 package com.openisle.model;
 
 /**
- * 帖子类型。
+ * PostType
+ *
+ * 帖子类型枚举，用于区分不同形态的帖子内容。
  */
 public enum PostType {
     NORMAL,  // 普通帖子

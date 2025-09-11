@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 /**
- * 标签仓库接口。
+ * TagRepository
+ *
+ * 标签仓库接口，提供标签的检索、筛选与作者维度的查询能力。
  */
 public interface TagRepository extends JpaRepository<Tag, Long> {
     // 名称模糊搜索（忽略大小写）

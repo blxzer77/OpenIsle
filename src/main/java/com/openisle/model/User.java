@@ -9,9 +9,21 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDateTime;
 import java.util.EnumSet;
 import java.util.Set;
-import java.util.HashSet;
 
-
+/**
+ * User
+ *
+ * 平台用户实体，记录账号、权限、资料与通知偏好等信息。
+ *
+ * 设计要点：
+ * - {@code username}/{@code email} 唯一约束；密码存储为哈希。
+ * - {@code verified}/{@code approved} 用于账号验证与人工审核。
+ * - {@code experience}/{@code point} 表示成长体系与积分体系。
+ * - {@code role} 角色权限；{@code displayMedal} 主页展示勋章。
+ * - {@code disabledNotificationTypes}/{@code disabledEmailNotificationTypes}
+ *   控制站内/邮件通知的关闭项，默认关闭部分被动型通知。
+ * - {@code createdAt} 由数据库自动生成，精度微秒。
+ */
 @Entity
 @Getter
 @Setter

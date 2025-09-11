@@ -1,7 +1,9 @@
 package com.openisle.model;
 
 /**
- * 角色类型。
+ * Role
+ *
+ * 平台角色类型，控制用户在系统中的权限范围。
  */
 public enum Role {
     ADMIN, // 管理员

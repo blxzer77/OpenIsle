@@ -1,8 +1,9 @@
 package com.openisle.model;
 
 /**
- * 反应/表情类型。
- * 用于帖子与评论的互动统计与筛选展示。
+ * ReactionType
+ *
+ * 反应/表情类型枚举，用于帖子与评论的互动统计与筛选展示。
  */
 public enum ReactionType {
     LIKE,                 // 赞

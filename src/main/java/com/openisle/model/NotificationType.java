@@ -1,8 +1,9 @@
 package com.openisle.model;
 
 /**
- * 站内通知类型。
- * 每个枚举值代表一类事件，便于消息聚合、筛选与订阅控制。
+ * NotificationType
+ *
+ * 站内通知类型枚举。每个枚举值代表一类事件，便于消息聚合、筛选与订阅控制。
  */
 public enum NotificationType {
     POST_VIEWED,              // 有人查看了你的帖子

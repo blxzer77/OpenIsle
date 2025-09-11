@@ -5,6 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Category
+ *
+ * 帖子分类实体，用于组织与聚合内容，便于导航与筛选。
+ *
+ * 字段说明：
+ * - {@code name}: 分类名称（唯一）。
+ * - {@code icon}/{@code smallIcon}: 图标与小图标（小图标可选）。
+ * - {@code description}: 分类描述文案。
+ */
 @Entity
 @Getter
 @Setter

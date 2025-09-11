@@ -1,7 +1,9 @@
 package com.openisle.model;
 
 /**
- * 评论排序方式。
+ * CommentSort
+ *
+ * 评论排序方式枚举，用于控制评论列表的展示顺序。
  */
 public enum CommentSort {
     NEWEST,           // 最新发布优先

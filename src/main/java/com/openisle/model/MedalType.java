@@ -1,7 +1,9 @@
 package com.openisle.model;
 
 /**
- * 勋章类型。
+ * MedalType
+ *
+ * 勋章类型枚举，用于在用户画像中展示代表性成就/身份标识。
  */
 public enum MedalType {
     COMMENT,     // 评论相关成就
