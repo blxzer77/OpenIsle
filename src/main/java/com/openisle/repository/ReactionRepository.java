@@ -1,6 +1,6 @@
 package com.openisle.repository;
 
-// import com.openisle.model.Message;
+import com.openisle.model.Message;
 
 import com.openisle.model.Comment;
 import com.openisle.model.Post;
@@ -147,8 +147,15 @@ public interface ReactionRepository extends JpaRepository<Reaction, Long> {
 
     // 待实现
     // 如未来支持消息(Message)上的反应，可开启如下方法并引入实体：
-    // Optional<Reaction> findByUserAndMessageAndType(User user, Message message, com.openisle.model.ReactionType type);
-    // List<Reaction> findByMessage(Message message);
+    // 已实现！
+    /**
+     * 根据用户、消息与反应类型查询唯一反应（Message 维度）。
+     */
+    Optional<Reaction> findByUserAndMessageAndType(User user, Message message, com.openisle.model.ReactionType type);
+    /**
+     * 查询某条消息下的所有反应（Message 维度）。
+     */
+    List<Reaction> findByMessage(Message message);
 }
 
 

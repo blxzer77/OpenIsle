@@ -17,6 +17,8 @@ import org.hibernate.annotations.CreationTimestamp;
  * 
  * 注意：Message 功能未实现，Message 类未创建。
  * 如需调用相关消息功能，请先补齐对应实体与业务逻辑，或暂时避免依赖。
+ *
+ * 已创建 Message 类并实现功能
  */
 @Entity
 @Getter
@@ -50,9 +52,10 @@ public class Reaction {
     @JoinColumn(name = "comment_id")
     private Comment comment; // 被反应的评论（可为空）
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "message_id")
-//    private Message message; // 被反应的消息（暂未实现）
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "message_id")
+    /** 针对站内消息(Message)的反应关联（可为空）。*/
+    private Message message; // 被反应的消息（暂未实现）
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false,
